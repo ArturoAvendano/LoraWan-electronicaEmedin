@@ -9,14 +9,14 @@ Maneja el envio y recepción de datos sobre la red WiFi asignada en la configura
 #include <ThingsBoard.h>
 
 /*Definición de estados para la conexión WiFi*/
-#define WIFI_AP_NAME        "HUAWEI-B310-D54E"
-#define WIFI_PASSWORD       "8N6HD011ML7"
+#define WIFI_AP_NAME        "REEMPLAZAR CON NOMBRE WIFI"
+#define WIFI_PASSWORD       "REEMPLAZAR CON CLAVE WIFI"
 WiFiClient espClient;
 int status = WL_IDLE_STATUS;
 
 /*Definición para la conexión con el servidor Thingsboard*/
-#define TOKEN               "Aaw7FtJcqRhOKWX0459d"
-#define THINGSBOARD_SERVER  "192.168.1.86"
+#define TOKEN               "REEMPLAZAR CON TOKEN THINGSBOARD"
+#define THINGSBOARD_SERVER  "REEMPLAZAR CON IP SERVIDOR THINGSBOARD"
 #define THINGSBOARD_PORT 8080
 ThingsBoardHttp tb(espClient, TOKEN, THINGSBOARD_SERVER, THINGSBOARD_PORT);
 
